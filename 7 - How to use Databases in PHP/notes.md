@@ -8,3 +8,4 @@ Lectures covered:
 6 - Receiving Post Data Form Check
 7 - Connecting to the Database using PHP
 8 - Creating Records in the database table with PHP
+9 - Reading Information from the Database with PHP
