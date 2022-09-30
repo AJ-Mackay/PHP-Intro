@@ -9,4 +9,5 @@ Lectures covered:
  7 - Connecting to the Database using PHP
  8 - Creating Records in the database table with PHP
  9 - Reading Information from the Database with PHP
-10 - Creating the Update Records form
+10 - Creating the Update Records form (& Fixing name attribute)
+11 - Query to Read IDs
