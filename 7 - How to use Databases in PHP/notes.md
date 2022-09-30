@@ -7,3 +7,4 @@ Lectures covered:
 5 - Markup for Login Page
 6 - Receiving Post Data Form Check
 7 - Connecting to the Database using PHP
+8 - Creating Records in the database table with PHP
