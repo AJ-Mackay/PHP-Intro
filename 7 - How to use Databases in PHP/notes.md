@@ -5,3 +5,4 @@ Lectures covered:
 3 - Creating a Database in PHPmyadmin
 4 - Creating Tables and Inserting Data in PHPmyadmin
 5 - Markup for Login Page
+6 - Receiving Post Data Form Check
