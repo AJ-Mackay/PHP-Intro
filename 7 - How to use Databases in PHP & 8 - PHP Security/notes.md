@@ -1,4 +1,4 @@
-Lectures covered:
+Lectures covered (Module 7):
 
  1 - Introduction to Databases
  2 - Introduction to PHPmyadmin
@@ -16,3 +16,7 @@ Lectures covered:
 14 - Delete Records from Database with PHP
 15 - Refactoring all Database Query Code into Functions
 16 - Making all files modular and more refactoring
+
+Lectures covered (Module 8):
+
+1 - SQL Injection - How to Prevent it
