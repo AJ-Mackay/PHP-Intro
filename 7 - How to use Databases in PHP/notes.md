@@ -11,3 +11,4 @@ Lectures covered:
  9 - Reading Information from the Database with PHP
 10 - Creating the Update Records form (& Fixing name attribute)
 11 - Query to Read IDs
+12 - Query to Update username and password
