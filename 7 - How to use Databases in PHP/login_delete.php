@@ -1,19 +1,11 @@
-<?php include "db.php";
+<?php include "db.php"; ?>
+<?php include "functions.php"; ?>
+
+<?php 
 
 if(isset($_POST['submit'])){
-$username = $_POST['username'];
-$password = $_POST['password'];
-
-$query = "INSERT INTO users(username, password) VALUES ('$username', '$password')";
-
-$result = mysqli_query($connection, $query);
-
-if(!$result){
-    die("QUERY FAILED!");
+    deleteRows();
 }
-
-}
-
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +21,8 @@ if(!$result){
     
 <div class="container">
 <div class="col-sm-6">
-    <form action="login_create.php" method="post">
+   
+<form action="login_delete.php" method="post">
         <div class="form-group">
             <label for="username">Username</label>
             <input type="text" name="username" class="form-control">
@@ -40,8 +33,18 @@ if(!$result){
             <input type="password" name="password" class="form-control">
         </div>
 
-        <input type="submit" class="btn btn-primary" name="submit" value="Submit">
+        <div class="form-group">
+            <select name="id">
+
+            <?php 
+               showAllData();
+            ?>
+
+            </select>
+        </div>
+        <input type="submit" class="btn btn-primary" name="submit" value="DELETE">
     </form>
+
 </div>
 </div>
 
