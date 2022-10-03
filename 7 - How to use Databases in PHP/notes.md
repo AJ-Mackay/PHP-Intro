@@ -14,3 +14,4 @@ Lectures covered:
 12 - Query to Update username and password
 13 - Refactoring the Update Query into a Function
 14 - Delete Records from Database with PHP
+15 - Refactoring all Database Query Code into Functions

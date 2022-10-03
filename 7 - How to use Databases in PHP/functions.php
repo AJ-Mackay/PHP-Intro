@@ -2,6 +2,23 @@
 
 <?php
 
+function createRows(){
+global $connection;
+if(isset($_POST['submit'])){
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $query = "INSERT INTO users(username, password) VALUES ('$username', '$password')";
+    $result = mysqli_query($connection, $query);
+    
+if(!$result){
+    die("QUERY FAILED!");
+} else {
+    echo "Record created";
+}
+    
+    }
+}
+
 function showAllData() {
 global $connection;
 $query = "SELECT * FROM users";
@@ -33,6 +50,8 @@ $query .= "WHERE id = $id ";
 $result = mysqli_query($connection, $query);
 if(!$result){
     die("QUERY FAILED" . mysqli_error($connection));
+} else {
+    echo "Record Updated";
 }
 }
 
@@ -47,6 +66,8 @@ $query .= "WHERE id = $id ";
 $result = mysqli_query($connection, $query);
 if(!$result){
     die("QUERY FAILED" . mysqli_error($connection));
+}else {
+    echo "Record Deleted";
 }
 }
 
