@@ -32,10 +32,23 @@ while($row = mysqli_fetch_assoc($result)){
 
     echo "<option value='$id'>$id</option>";
 }
+}
 
+function readRows(){
+    global $connection;
+$query = "SELECT * FROM users";
+$result = mysqli_query($connection, $query);
+if(!$result){
+    die("QUERY FAILED!");
+}
+
+while($row = mysqli_fetch_assoc($result)){
+    print_r($row);
+}
 }
 
 function UpdateTable(){
+if(isset($_POST['submit'])){
 global $connection;
 $username = $_POST['username'];
 $password = $_POST['password'];
@@ -54,8 +67,10 @@ if(!$result){
     echo "Record Updated";
 }
 }
+}
 
 function deleteRows(){
+if(isset($_POST['submit'])){
 global $connection;
 $id = $_POST['id'];
 
@@ -70,5 +85,5 @@ if(!$result){
     echo "Record Deleted";
 }
 }
-
+}
 ?>
