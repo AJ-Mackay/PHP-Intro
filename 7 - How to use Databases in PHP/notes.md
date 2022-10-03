@@ -12,3 +12,4 @@ Lectures covered:
 10 - Creating the Update Records form (& Fixing name attribute)
 11 - Query to Read IDs
 12 - Query to Update username and password
+13 - Refactoring the Update Query into a Function
