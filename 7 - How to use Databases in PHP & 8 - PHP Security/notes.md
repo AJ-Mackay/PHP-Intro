@@ -20,3 +20,4 @@ Lectures covered (Module 7):
 Lectures covered (Module 8):
 
 1 - SQL Injection - How to Prevent it
+2 - Password Encryption
