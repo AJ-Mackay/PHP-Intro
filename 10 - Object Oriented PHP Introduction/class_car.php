@@ -43,6 +43,11 @@ echo $truck->doors . "<br>";
 class Plane extends Car {
 
     var $wheels = 3;
+
+    function __construct()
+    {
+        echo $this->wheels = 10;
+    }
 }
 
 if(class_exists("Plane")){
