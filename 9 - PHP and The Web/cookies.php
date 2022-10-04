@@ -18,6 +18,15 @@ setcookie($name, $value, $expiration);
     <title>Document</title>
 </head>
 <body>
-<?php ?>
+<?php
+
+if(isset($_COOKIE["SomeName"])){
+$someOne = $_COOKIE["SomeName"];
+echo $someOne;
+} else {
+$someOne = "";
+}
+
+?>
 </body>
 </html>
