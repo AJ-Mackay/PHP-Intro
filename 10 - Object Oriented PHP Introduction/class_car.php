@@ -2,8 +2,17 @@
 
 class Car {
 
+    var $wheels = 4;
+    var $engine = 1;
+    var $doors = 5;
+
     function MoveWheels(){
-        echo "Wheels move";
+        echo "Wheels move" . "<br>";
+        // $this->wheels = 10;
+    }
+
+    function CreateDoors(){
+        $this->doors = 6;
     }
 
 }
@@ -21,8 +30,14 @@ if(method_exists("Car", "MoveWheels")) {
 }
 
 $bmw = new Car();
-$audi = new Car();
-
 $bmw->MoveWheels();
+
+// $bmw->wheels = 5;
+echo $bmw->wheels . "<br>";
+
+$truck = new Car();
+echo $truck->wheels = 10 . "<br>";
+$truck->CreateDoors();
+echo $truck->doors . "<br>";
 
 ?>
