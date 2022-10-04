@@ -20,4 +20,9 @@ if(method_exists("Car", "MoveWheels")) {
     echo "No Method found!" . "<br>";
 }
 
+$bmw = new Car();
+$audi = new Car();
+
+$bmw->MoveWheels();
+
 ?>
