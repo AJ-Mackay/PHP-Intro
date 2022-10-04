@@ -40,4 +40,16 @@ echo $truck->wheels = 10 . "<br>";
 $truck->CreateDoors();
 echo $truck->doors . "<br>";
 
+class Plane extends Car {
+
+    var $wheels = 3;
+}
+
+if(class_exists("Plane")){
+    echo "it does" . "<br>";
+}
+
+$jet = new Plane();
+$jet->MoveWheels();
+echo $jet->wheels;
 ?>
